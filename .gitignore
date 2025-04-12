@@ -1,0 +1,36 @@
+### JetBrains ###
+.idea/
+*.iws
+*.iml
+*.ipr
+*.ids
+*.orig
+
+### macOS ###
+.DS_Store
+
+### Node ###
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Директории зависимостей
+node_modules/
+/dist/
+
+# Кэш
+.cache/
+
+# Переменные окружения
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+
+### Temp ###
+*.tmp
+*.bak
+*.swp

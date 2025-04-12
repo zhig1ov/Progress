@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Block</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-container">
+            <canvas id="progress"></canvas>
+        </div>
+        <div class="controls">
+                <div class="input-wrapper">
+                    <input type="number" id="value" min="0" max="100" value="0">
+                    <label for="value">Value</label>
+                </div>
+                <div class="input-wrapper">
+                    <label class="toggle">
+                        <input type="checkbox" id="animate">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span>Animate</span>
+                </div>
+                <div class="input-wrapper">
+                    <label class="toggle">
+                        <input type="checkbox" id="hidden">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span>Hide</span>
+                </div>
+        </div>
+    </div>
+    <script src="progress.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
