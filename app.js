@@ -28,14 +28,14 @@ document.getElementById('hidden').addEventListener('change', (e) => {
 
 
 //Имитация загрузки прогресса
-let value = 0;
-const interval = setInterval(() => {
-    progress.incrementProgress(value)
-    value += 1;
-    if (progress.settings.value === 100) {
-        clearInterval(interval);
-    }
-}, 100)
+// let value = 0;
+// const interval = setInterval(() => {
+//     progress.incrementProgress(value)
+//     value += 1;
+//     if (progress.settings.value === 100) {
+//         clearInterval(interval);
+//     }
+// }, 100)
 
 
 // Пример использования метода destroy (Раскомментируйте для удаления компонента)
