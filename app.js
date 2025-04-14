@@ -1,13 +1,15 @@
 // Инициализация компонента прогресса
 const progress = new ProgressBlock('progress');
 
-//ограничение значения инпута
-const valueInput = document.getElementById('value');
-valueInput.addEventListener('change', function() {
-    this.value = Math.min(100, Math.max(0, this.value));
-});
-
 // Настройка обработчиков событий
+
+// Обработчик изменения значения прогресса
+document.getElementById('value').addEventListener('input', (e) => {
+    let value = e.target.value.replace(/[^0-9]/g, '');
+    value = Math.min(100, Math.max(0, Number(value)));
+    e.target.value = value;
+    progress.setValue(value);
+});
 
 // Обработчик изменения значения прогресса
 document.getElementById('value').addEventListener('input', (e) => {
@@ -24,8 +26,6 @@ document.getElementById('animate').addEventListener('change', (e) => {
 document.getElementById('hidden').addEventListener('change', (e) => {
     progress.setHidden(e.target.checked);
 });
-
-
 
 //Имитация загрузки прогресса
 // let value = 0;

@@ -82,7 +82,8 @@ class ProgressBlock {
      */
     setHidden(hidden) {
         this.settings.hidden = hidden;
-        this.settings.canvas.style.display = hidden ? 'none' : 'block';
+        //this.settings.canvas.style.display = hidden ? 'none' : 'block';
+        this.settings.canvas.style.visibility = hidden ? 'hidden' : 'visible';
     }
 
     /**
